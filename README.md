@@ -16,11 +16,6 @@ Proyecto de portafolio para mostrar un sistema de gestion de reportes de errores
 - `styles/` estilos globales y tokens.
 - `types/` tipos compartidos de TypeScript.
 
-## Flujo de pantallas
-- Login en `features/auth/pages/LoginPage.tsx`.
-- Layout principal con sidebar en `layouts/AppLayout.tsx`.
-- Rutas en `routes/AppRoutes.tsx`.
-
 ## Scripts
 - `npm run dev` inicia el servidor de desarrollo.
 - `npm run build` genera la build de produccion.

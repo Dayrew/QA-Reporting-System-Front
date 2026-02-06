@@ -1,4 +1,4 @@
-﻿import { FormEvent, useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function LoginPage() {
@@ -13,7 +13,7 @@ export default function LoginPage() {
     }
   }, [navigate])
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault()
     if (!email || !password) return
     localStorage.setItem('qa-auth', '1')
@@ -62,3 +62,4 @@ export default function LoginPage() {
     </div>
   )
 }
+
